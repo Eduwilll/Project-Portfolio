@@ -131,7 +131,6 @@ const Home = () => {
                                 />
                             </Tooltip>
                         </Link>
-
                     </Box>
                 </Section>
             </Container>
