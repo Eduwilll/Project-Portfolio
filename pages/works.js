@@ -11,49 +11,38 @@ const Works = () => (
             <Heading as="h3" fontSize={20} mb={4}>
                 Works
             </Heading>
-                <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SimpleGrid columns={[1, 1, 2]} gap={6}>
                 <Section>
-                    <WorkGridItem id="comingSoon" title="comingSoon" thumbnail={thumbComingSoon}>
-                        comingSoon
-                    </WorkGridItem>
-                </Section>
-                </SimpleGrid>
-
-            {/* <SimpleGrid columns={[1, 1, 2]} gap={6}>
-                <Section>
-                    <WorkGridItem id="inkdrop" title="Inkdrop" thumbnail={'thumbInkdrop'}>
-                        A Markdown note-taking app with 100+ plugins, cross-platform and
-                        encrypted data sync support
+                    <WorkGridItem id="comingSoon" title="Coming-Soon" thumbnail={thumbComingSoon}>
+                        Coming-Soon
                     </WorkGridItem>
                 </Section>
                 <Section>
                     <WorkGridItem
-                        id="walknote"
-                        title="walknote"
-                        thumbnail={'blank'}
+                        id="comingSoon"
+                        title="Coming-Soon"
+                        thumbnail={thumbComingSoon}
                     >
-                        Music recommendation app for iOS
+                        Coming-Soon
                     </WorkGridItem>
                 </Section>
 
                 <Section delay={0.1}>
                     <WorkGridItem
-                        id="fourpainters"
-                        title="The four painters"
-                        thumbnail={'thumbFourPainters'}
+                        id="comingSoon"
+                        title="Coming-Soon"
+                        thumbnail={thumbComingSoon}
                     >
-                        A video work generated with deep learning, imitating famous four
-                        painters like Van Gogh
+                        Coming-Soon
                     </WorkGridItem>
                 </Section>
                 <Section delay={0.1}>
-                    <WorkGridItem id="menkiki" thumbnail={'thumbMenkiki'} title="Menkiki">
-                        An app that suggests ramen(noodle) shops based on a given photo of
-                        the ramen you want to eat
+                    <WorkGridItem id="comingSoon" thumbnail={thumbComingSoon} title="Coming-Soon">
+                        Coming-Soon
                     </WorkGridItem>
                 </Section>
-            </SimpleGrid> */}
-
+            </SimpleGrid>
+            <Divider />
         </Container>
     </Layout>
 )

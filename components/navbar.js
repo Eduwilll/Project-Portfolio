@@ -21,12 +21,13 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-    <NextLink href={href} passHref scroll={false}>
+        <NextLink href={href} passHref scroll={false}>
       <Link
         p={2}
         bg={active ? 'grassTeal' : undefined}
         color={active ? '#202023' : inactiveColor}
         target={target}
+        
         {...props}
       >
         {children}
@@ -46,6 +47,8 @@ const Navbar = props => {
       bg={useColorModeValue('#ffffff40', '#20202380')}
       css={{ backdropFilter: 'blur(10px)' }}
       zIndex={1}
+        text-decoration={"none"}
+
       {...props}
     >
       <Container
@@ -55,6 +58,7 @@ const Navbar = props => {
         wrap="wrap"
         align="center"
         justify="space-between"
+        
       >
         <Flex align="center" mr={5}>
           <Heading as="h1" size="lg" letterSpacing={'tighter'}>
