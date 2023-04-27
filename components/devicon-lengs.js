@@ -1,5 +1,5 @@
 import * as React from "react";
-import { Wrap, WrapItem } from '@chakra-ui/react'
+import { Wrap } from '@chakra-ui/react'
 import {
     Image,
     Box,
