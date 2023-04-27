@@ -7,7 +7,7 @@ import {
     Image,
     useColorModeValue,
     Link,
-    Tooltip
+    Tooltip,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article';
@@ -41,9 +41,9 @@ const Home = () => {
                             borderColor="whiteAlpha.800"
                             borderWidth={2}
                             borderStyle="solid"
-                            maxWidth="100px"
-                            display="inline-block"
                             borderRadius='50%'
+                            boxSize="120px"
+                            objectFit="cover"
                             src="/images/MyImage.jpg"
                             alt="Profile Image" />
                     </Box>
@@ -98,7 +98,11 @@ const Home = () => {
                         flexShrink={0}
                         mt={{ base: 4, md: 0 }}
                         ml={{ md: 6 }}
-                        align="left">
+                        gap='170px'
+                        align="left"
+                        >
+                        
+                        
 
                         <Link href='https://www.linkedin.com/in/eduardo-fabricio-goza-669b641b4/' target="_blank">
                             <Tooltip label="Linkedin" >
@@ -115,7 +119,6 @@ const Home = () => {
                                 />
                             </Tooltip>
                         </Link>
-
                         <Link href="https://github.com/Eduwilll" target="_blank">
                             <Tooltip label="GitHub" >
                                 <Image
