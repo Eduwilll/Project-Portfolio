@@ -6,8 +6,7 @@ import {
     Heading,
     Image,
     useColorModeValue,
-    Link,
-    Tooltip,
+    Link
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article';
@@ -15,6 +14,7 @@ import Section from '../components/section'
 import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio';
 import Devicon from '../components/devicon-lengs';
+import SocialLinks from '../components/SocialLinks';
 
 const Home = () => {
     return (
@@ -94,47 +94,7 @@ const Home = () => {
                     <Heading as="h3" variant="section-title">
                         Social Links
                     </Heading>
-                    <Box
-                        flexShrink={0}
-                        mt={{ base: 4, md: 0 }}
-                        ml={{ md: 6 }}
-                        gap='170px'
-                        align="left"
-                        >
-                        
-                        
-
-                        <Link href='https://www.linkedin.com/in/eduardo-fabricio-goza-669b641b4/' target="_blank">
-                            <Tooltip label="Linkedin" >
-                                <Image
-                                    borderColor="whiteAlpha.800"
-                                    borderWidth={2}
-                                    borderStyle="none"
-                                    maxWidth="50px"
-                                    display="inline-block"
-                                    borderRadius='none'
-                                    src="/images/icons/linkedin/linkedin-original.svg"
-                                    alt="Profile Image"
-                                    data-tooltip="some more information"
-                                />
-                            </Tooltip>
-                        </Link>
-                        <Link href="https://github.com/Eduwilll" target="_blank">
-                            <Tooltip label="GitHub" >
-                                <Image
-                                    borderColor="whiteAlpha.800"
-                                    borderWidth={2}
-                                    borderStyle="none"
-                                    maxWidth="50px"
-                                    display="inline-block"
-                                    borderRadius='none'
-                                    src="/images/icons/github/github-original.svg"
-                                    alt="Profile Image"
-                                    data-tooltip="some more information"
-                                />
-                            </Tooltip>
-                        </Link>
-                    </Box>
+                    <SocialLinks />
                 </Section>
             </Container>
         </Layout>
