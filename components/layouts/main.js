@@ -15,9 +15,15 @@ const Main = ({ children, router }) => {
         <Box as="main" pb={8}>
             <Head>
                 <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+                <meta name='description' content='Eduardo homepage'/>
+                <meta name='author' content='Eduardo Fabricio' />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-                <title>Eduardo Fabiricio Goza - Homepage</title>
+                <title>Eduardo Fabiricio- Homepage</title>
+                <meta name="twitter:title" content="Eduardo Fabricio" />
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta property="og:type" content="website" />
+                <meta property="og:image" content="https://eduwill-homepage.vercel.app/images/card.jpg" />
             </Head>
 
             <NavBar path={router.asPath} />
