@@ -1,11 +1,9 @@
-import NextLink from 'next/link'
 import {
     Container,
     Box,
     Button,
     Heading,
     Image,
-    Link
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article';
@@ -15,6 +13,7 @@ import { BioSection, BioYear } from '../components/bio';
 import Devicon from '../components/devicon-lengs';
 import SocialLinks from '../components/SocialLinks';
 import IntroBox from '../components/introBox';
+import CustomLink from '../components/CustomLink';
 
 const Home = () => {
     return (
@@ -62,12 +61,12 @@ const Home = () => {
                         Work
                     </Heading>
                     <Paragraph>
-                        Eduardo is a Systems Analysis and Development student at Fatec - Campinas and a cybersecurity enthusiast based in São Paulo - Brazil. Recently he has focused on studying React Native, Cisco CNNA and Java. Future works and projects will be posted on this site! Current {''} <NextLink href="/works"><Link>work</Link></NextLink>.
+                        Eduardo is a Systems Analysis and Development student at Fatec - Campinas and a cybersecurity enthusiast based in São Paulo - Brazil. Recently he has focused on studying React Native, Cisco CNNA and Java. Future works and projects will be posted on this site! Current {''}<CustomLink href={'/works'}>work</CustomLink>.
                     </Paragraph>
                     <Box align="center" my={4}>
-                        <NextLink href="/works">
+                        <CustomLink href="/works">
                             <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">My portfolio</Button>
-                        </NextLink>
+                        </CustomLink>
                     </Box>
                 </Section>
                 <Section delay={0.2}>
