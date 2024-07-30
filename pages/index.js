@@ -5,7 +5,6 @@ import {
     Button,
     Heading,
     Image,
-    useColorModeValue,
     Link
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from '@chakra-ui/icons'
@@ -15,18 +14,19 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio';
 import Devicon from '../components/devicon-lengs';
 import SocialLinks from '../components/SocialLinks';
+import IntroBox from '../components/introBox';
 
 const Home = () => {
     return (
         <Layout>
             <Container>
-                <Box borderRadius="lg" bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} p={3} mb={6} align="center">
-                    Hello, I&apos;m a student at Fatec Campinas in Brazil and I am studying Systems Analysis and Development
-                </Box>
+
+                <IntroBox />
+
                 <Box display={{ md: 'flex' }}>
                     <Box flexGrow={1}>
                         <Heading as="h2" variant="page-title">
-                            Eduardo Fabricio Goza
+                            Eduardo Fabricio
                         </Heading>
                         <p>Developer and Cybersecurity Enthusiast</p>
                     </Box>
@@ -44,7 +44,8 @@ const Home = () => {
                             borderRadius='50%'
                             boxSize="120px"
                             objectFit="cover"
-                            src="/images/MyImage.jpg"
+                            fill={true}
+                            src="/images/MyImage.webp"
                             alt="Profile Image" />
                     </Box>
                 </Box>
