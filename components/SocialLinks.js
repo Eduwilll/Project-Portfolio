@@ -45,7 +45,12 @@ const SocialLinks = () => {
       label: "GitHub",
       iconSrc: "/images/icons/github/github-original.svg"
     },
-    // Você pode adicionar mais links sociais aqui facilmente
+    {
+      href: "https://www.salesforce.com/trailblazer/eduardofabriciog",
+      label: "Trailhead - Salesforce",
+      iconSrc: "/images/icons/salesforce/Trailhead_old.svg"
+    },
+
   ];
 
   return (

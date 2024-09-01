@@ -78,8 +78,16 @@ const Home = () => {
                         Born in Sumaré/SP, Brazil.
                     </BioSection>
                     <BioSection>
+                        <BioYear>2015</BioYear>
+                        Administrative Assistant at CJ Lan House
+                    </BioSection>
+                    <BioSection>
                         <BioYear>2020</BioYear>
                         joined FATEC-campinas to study Systems Analysis and Development
+                    </BioSection>
+                    <BioSection>
+                        <BioYear>2023</BioYear>
+                        Systems Developer Intern at Sottelli
                     </BioSection>
                 </Section>
                 <Section delay={0.3}>
