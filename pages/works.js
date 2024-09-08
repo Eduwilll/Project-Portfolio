@@ -4,6 +4,7 @@ import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
 import thumbComingSoon from '../public/images/works/thumbComingSoon.jpg'
+import thumbEcommerce from '../public/images/works/ecommerce/ecommerce-thumb.png';
 
 const Works = () => (
     <Layout title="Works">
@@ -37,8 +38,8 @@ const Works = () => (
                     </WorkGridItem>
                 </Section>
                 <Section delay={0.1}>
-                    <WorkGridItem id="comingSoon" thumbnail={thumbComingSoon} title="Coming-Soon">
-                        Coming-Soon
+                    <WorkGridItem id="ecommerce" thumbnail={thumbEcommerce} title="Electronic Components E-commerce">
+                    E-commerce platform for selling electronic components.
                     </WorkGridItem>
                 </Section>
             </SimpleGrid>
