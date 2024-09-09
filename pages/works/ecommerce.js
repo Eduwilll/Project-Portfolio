@@ -38,7 +38,6 @@ import {
           <ListItem>PayPal integration for payments</ListItem>
           <ListItem>Admin dashboard for e-commerce management</ListItem>
         </UnorderedList>
-        <ProfileCard />
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
