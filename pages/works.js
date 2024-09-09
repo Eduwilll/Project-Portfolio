@@ -3,7 +3,7 @@ import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
 
-import thumbComingSoon from '../public/images/works/thumbComingSoon.jpg'
+// import thumbComingSoon from '../public/images/works/thumbComingSoon.jpg'
 import thumbEcommerce from '../public/images/works/ecommerce/ecommerce-thumb.png';
 import thumbCryptography from '../public/images/works/cryptography/cryptography-thumb.png';
 import thumbMedlife  from "../public/images/works/medlife/medlife-thumb.png";
