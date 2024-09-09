@@ -14,7 +14,8 @@ import {
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
-  
+import ProfileCard from '../../components/profile-card'
+  ProfileCard
   const Ecommerce = () => (
     <Layout title="Electronic Components E-commerce">
       <Container>
@@ -38,7 +39,7 @@ import {
           <ListItem>PayPal integration for payments</ListItem>
           <ListItem>Admin dashboard for e-commerce management</ListItem>
         </UnorderedList>
-  
+        <ProfileCard />
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -56,7 +57,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Last update</Meta>
-            <span>2023/06/15</span>
+            <span>2024/09/08</span>
           </ListItem>
           <ListItem>
             <Meta>Documentation</Meta>
