@@ -50,7 +50,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Source Code</Meta>
-            <Link href="https://github.com/seu-usuario/chatbot-loja-salgados">
+            <Link href="https://github.com/Eduwilll/whatsapp-automation">
               GitHub Repository <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -60,7 +60,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Documentation</Meta>
-            <Link href="https://github.com/seu-usuario/chatbot-loja-salgados/README.md">
+            <Link href="https://github.com/Eduwilll/whatsapp-automation">
               Read on GitHub <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
@@ -72,14 +72,14 @@ import {
   
         <UnorderedList my={4}>
           <ListItem>
-            <Link href="https://github.com/seu-usuario/chatbot-loja-salgados" target="_blank">
+            <Link href="https://github.com/Eduwilll/whatsapp-automation" target="_blank">
               <Badge mr={2}>FEATURE</Badge>
                 24/7 automated customer service{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://github.com/seu-usuario/chatbot-loja-salgados" target="_blank">
+            <Link href="https://github.com/Eduwilll/whatsapp-automation" target="_blank">
               <Badge mr={2}>FEATURE</Badge>
                 Integration with WhatsApp and Telegram{' '}
               <ExternalLinkIcon mx="2px" />

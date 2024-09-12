@@ -7,7 +7,7 @@ import { WorkGridItem } from '../components/grid-item'
 import thumbEcommerce from '../public/images/works/ecommerce/ecommerce-thumb.png';
 import thumbCryptography from '../public/images/works/cryptography/cryptography-thumb.png';
 import thumbMedlife  from "../public/images/works/medlife/medlife-thumb.png";
-import thumbChabot  from "../public/images/works/chatbotLLAS/chabot-thumb.jpeg";
+import thumbChabot  from "../public/images/works/chatbotLLAS/chabot-thumb.png";
 const Works = () => (
     <Layout title="Works">
         <Container>
