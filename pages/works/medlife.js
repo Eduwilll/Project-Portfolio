@@ -9,10 +9,13 @@ import {
   Heading,
   Center,
   Image,
+  Alert,
+  AlertIcon,
+  AlertTitle,
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
 // import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title,  Meta } from '../../components/work'
+import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 import FigmaEmbed from '../../components/figmaEmbed'
 
@@ -25,9 +28,24 @@ const Work = () => (
       <Center my={6}>
         <Image src="/images/works/medlife/medlife-thumb.png" alt="MEDLIFE app thumbnail" />
       </Center>
+      <Alert my={4}
+        status='info'
+        flexDirection='column'
+        alignItems='center'
+        justifyContent='center'
+        textAlign='center'
+        // height='200px'
+        borderRadius='12px'
+      >
+        <AlertIcon />
+        <AlertTitle>
+          Application Development Info!
+        </AlertTitle>
+        This content is not complete and will be updated over time. What is available here is just a small part of the prototype currently under development.
+      </Alert>
       <P>
         MEDLIFE is a mobile marketplace application developed to address specific needs that
-        became prominent with the advent of COVID-19. It focuses on the online sale of 
+        became prominent with the advent of COVID-19. It focuses on the online sale of
         prescription medications, aiming to provide a secure and efficient platform for users,
         with a particular emphasis on benefiting the elderly population.
       </P>
@@ -67,20 +85,20 @@ const Work = () => (
       </List>
 
       <Heading as="h4" fontSize={16} my={6}>
-        <Center>High-Fidelity Prototypes</Center>
+        <Center>High-Fidelity User Interface (UI)</Center>
       </Heading>
 
-      <FigmaEmbed embedUrl ="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj0YlIVGjqxZwZ4F8ZijvKX%2FPrototipe-MedLife%3Fnode-id%3D15-793%26starting-point-node-id%3D15%253A793%26t%3DW3qfOoW9shm1GVXA-1"/>
+      <FigmaEmbed embedUrl="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fj0YlIVGjqxZwZ4F8ZijvKX%2FPrototipe-MedLife%3Fnode-id%3D15-793%26starting-point-node-id%3D15%253A793%26t%3DW3qfOoW9shm1GVXA-1" />
       <P>
         These high-fidelity prototypes were created using Figma, showcasing the app&apos;s user interface
         and key features. They demonstrate the app&apos;s focus on user-friendly design, particularly
         for elderly users, and the secure process for purchasing prescription medications.
       </P>
-      
+
       <Heading as="h4" fontSize={16} my={6}>
         <Center>Key Features</Center>
       </Heading>
-      
+
       <UnorderedList my={4}>
         <ListItem>Secure user authentication and prescription verification</ListItem>
         <ListItem>Easy-to-use interface designed with elderly users in mind</ListItem>
