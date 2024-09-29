@@ -6,12 +6,12 @@ import { WorkGridItem } from '../components/grid-item'
 // import thumbComingSoon from '../public/images/works/thumbComingSoon.jpg'
 import thumbEcommerce from '../public/images/works/ecommerce/ecommerce-thumb.png';
 import thumbCryptography from '../public/images/works/cryptography/cryptography-thumb.png';
-import thumbMedlife  from "../public/images/works/medlife/medlife-thumb.png";
-import thumbChabot  from "../public/images/works/chatbotLLAS/chabot-thumb.png";
+import thumbMedlife from "../public/images/works/medlife/medlife-thumb.png";
+import thumbChabot from "../public/images/works/chatbotLLAS/chabot-thumb.png";
 const Works = () => (
     <Layout title="Works">
         <Container>
-            <Heading as="h3" fontSize={20} mb={4}>
+            <Heading as="h3" fontSize={20} mb={4} variant="section-title">
                 Works
             </Heading>
             <SimpleGrid columns={[1, 1, 2]} gap={6}>
@@ -26,7 +26,7 @@ const Works = () => (
                 </Section>
                 <Section>
                     <WorkGridItem id="chatbotLLAS" title="Chatbot for LLAS Coxitas S/A" thumbnail={thumbChabot}>
-                    Projeto Chatbot para automação de atentimento ao cliente de uma Loja de Salgado para whatsapps.
+                        Chatbot Project for Automating Customer Service for a Salgaderia on WhatsApp
                     </WorkGridItem>
                 </Section>
 
