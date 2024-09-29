@@ -24,6 +24,8 @@ const icons = [
     { src: "/images/icons/linux/linux-original.svg", alt: "Linux", tooltip: "Linux" },
     { src: "/images/icons/windows8/windows8-original.svg", alt: "Windows", tooltip: "Windows" },
     { src: "/images/icons/android/android-plain-wordmark.svg", alt: "Android", tooltip: "Android" },
+    { src: "/images/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg", alt: "AWS", tooltip: "AWS" },
+    { src: "/images/icons/azure/azure-original-wordmark.svg", alt: "Azure", tooltip: "Azure" },
     { src: "/images/icons/firebase/firebase-plain-wordmark.svg", alt: "firebase", tooltip: "firebase" },
     { src: "/images/icons/salesforce/salesforce-plain.svg", alt: "salesforce", tooltip: "Salesforce" },
   ];
