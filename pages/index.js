@@ -49,7 +49,7 @@ const Home = () => (
                 </Box>
             </Box>
             <Section dalay={0.1}>
-                    <Heading as="h2" variant="section-title">
+                <Heading as="h2" variant="section-title">
                     Experience with
                 </Heading>
                 <Devicon />
@@ -64,8 +64,9 @@ const Home = () => (
                     Work
                 </Heading>
                 <Paragraph>
-                    Eduardo is a Systems Analysis and Development student at Fatec - Campinas and a cybersecurity enthusiast based in São Paulo - Brazil. Recently he has focused on studying React Native, Cisco CNNA and Java. Future works and projects will be posted on this site! Current {''}<CustomLink href={'/works'}>work</CustomLink>.
+                    Eduardo is a Systems Analysis and Development student at Fatec - Campinas and a cybersecurity enthusiast based in São Paulo, Brazil. Recently, he has been focusing on developing Android applications using Java and studying AWS Cloud technologies. Future projects and updates will be shared on this site! Check out his current <CustomLink href={'/works/medlife'}>work</CustomLink>.
                 </Paragraph>
+
                 <Box align="center" my={4}>
                     <CustomLink href="/works">
                         <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">My portfolio</Button>
