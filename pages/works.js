@@ -8,6 +8,7 @@ import thumbEcommerce from '../public/images/works/ecommerce/ecommerce-thumb.png
 import thumbCryptography from '../public/images/works/cryptography/cryptography-thumb.png';
 import thumbMedlife from "../public/images/works/medlife/medlife-thumb.png";
 import thumbChabot from "../public/images/works/chatbotLLAS/chabot-thumb.png";
+import thumbDash from "../public/images/works/dashboardchatbot/dash-thumb.jpeg";
 const Works = () => (
     <Layout title="Works">
         <Container>
@@ -22,6 +23,11 @@ const Works = () => (
                         thumbnail={thumbMedlife}
                     >
                         Coming-Soon
+                    </WorkGridItem>
+                </Section>
+                <Section>
+                    <WorkGridItem id="dashboardchatbot" title="Dashboard for LLAS Coxitas S/A" thumbnail={thumbDash}>
+                        Chatbot Project for Automating Customer Service for a Salgaderia on WhatsApp
                     </WorkGridItem>
                 </Section>
                 <Section>
