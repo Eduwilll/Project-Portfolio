@@ -50,7 +50,7 @@ import {
           </ListItem>
           <ListItem>
             <Meta>Last update</Meta>
-            <span>2024/10/05</span>
+            <span>2024/10/07</span>
           </ListItem>
         </List>
   
@@ -61,14 +61,14 @@ import {
         <UnorderedList my={4}>
           <ListItem>
             <Link href="https://github.com/Eduwilll/LLA-Coxitas-Dashboard" target="_blank">
-              <Badge mr={2}>NEW</Badge>
+              <Badge mr={2}>coming soon</Badge>
                 WhatsApp integration for automated messaging{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
           </ListItem>
           <ListItem>
             <Link href="https://github.com/Eduwilll/LLA-Coxitas-Dashboard" target="_blank">
-              <Badge mr={2}>FEATURE</Badge>
+              <Badge mr={2}>coming soon</Badge>
                 Web-based interface for easy chatbot management{' '}
               <ExternalLinkIcon mx="2px" />
             </Link>
