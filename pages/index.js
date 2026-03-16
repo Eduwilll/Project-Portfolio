@@ -4,6 +4,10 @@ import {
     Button,
     Heading,
     Image,
+    Text,
+    Flex,
+    Badge,
+    Divider,
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article';
@@ -14,96 +18,170 @@ import Devicon from '../components/devicon-lengs';
 import SocialLinks from '../components/SocialLinks';
 import IntroBox from '../components/introBox';
 import CustomLink from '../components/CustomLink';
-// import NameIntro from "../components/NameIntro";
+import SkillsSection from '../components/skills-section';
+import TimelineSection from '../components/timeline-section';
+
 const Home = () => (
     <Layout>
-        <Container>
+        <Container maxW="container.md">
 
             <IntroBox />
 
-            <Box display={{ md: 'flex' }}>
+            {/* Hero Section */}
+            <Box display={{ md: 'flex' }} alignItems="center" mb={8}>
                 <Box flexGrow={1}>
-                    <Heading as="h2" variant="page-title">
-                        {/* <NameIntro /> */}
+                    <Heading as="h2" variant="page-title" fontSize={{ base: '3xl', md: '4xl' }}>
                         Eduardo Fabricio
                     </Heading>
-                    <p>Developer and Cybersecurity Enthusiast</p>
+                    <Text 
+                        fontSize="lg" 
+                        color="teal.300" 
+                        fontWeight="medium"
+                        mt={1}
+                    >
+                        Full Stack Developer
+                    </Text>
+                    <Text fontSize="sm" color="whiteAlpha.700" mt={2}>
+                        Cybersecurity Enthusiast | Cloud Computing | Mobile Development
+                    </Text>
+                    <Flex gap={2} mt={3} flexWrap="wrap">
+                        <Badge colorScheme="teal" variant="subtle" px={2} py={1}>React</Badge>
+                        <Badge colorScheme="blue" variant="subtle" px={2} py={1}>TypeScript</Badge>
+                        <Badge colorScheme="green" variant="subtle" px={2} py={1}>Node.js</Badge>
+                        <Badge colorScheme="purple" variant="subtle" px={2} py={1}>AWS</Badge>
+                    </Flex>
                 </Box>
 
                 <Box
                     flexShrink={0}
-                    mt={{ base: 4, md: 0 }}
-                    ml={{ md: 6 }}
-                    align="center">
-
-                    <Image
-                        borderColor="whiteAlpha.800"
-                        borderWidth={2}
-                        borderStyle="solid"
-                        borderRadius='50%'
-                        boxSize="120px"
-                        objectFit="cover"
-                        fill={true}
-                        src="/images/MyImage.webp"
-                        alt="Profile Image" />
+                    mt={{ base: 6, md: 0 }}
+                    ml={{ md: 8 }}
+                    align="center"
+                >
+                    <Box
+                        position="relative"
+                        _before={{
+                            content: '""',
+                            position: 'absolute',
+                            top: '-4px',
+                            left: '-4px',
+                            right: '-4px',
+                            bottom: '-4px',
+                            borderRadius: 'full',
+                            bg: 'linear-gradient(135deg, teal.400, blue.500)',
+                            zIndex: -1,
+                        }}
+                    >
+                        <Image
+                            borderColor="gray.800"
+                            borderWidth={4}
+                            borderStyle="solid"
+                            borderRadius='full'
+                            boxSize="140px"
+                            objectFit="cover"
+                            src="/images/MyImage.webp"
+                            alt="Eduardo Fabricio"
+                        />
+                    </Box>
                 </Box>
             </Box>
-            <Section dalay={0.1}>
-                <Heading as="h2" variant="section-title">
-                    Experience with
-                </Heading>
-                <Devicon />
-            </Section>
-            {/**
-         
-         *
-         */}
 
-            <Section dalay={0.2}>
+            {/* About Section */}
+            <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Work
+                    Sobre
                 </Heading>
                 <Paragraph>
-                    Eduardo is a Systems Analysis and Development student at Fatec - Campinas and a cybersecurity enthusiast based in São Paulo, Brazil. Recently, he has been focusing on developing Android applications using Java and studying AWS Cloud technologies. Future projects and updates will be shared on this site! Check out his current <CustomLink href={'/works/medlife'}>work</CustomLink>.
+                    Estudante de Análise e Desenvolvimento de Sistemas na Fatec - Campinas e entusiasta de cibersegurança baseado em São Paulo, Brasil. Atualmente focado no desenvolvimento de aplicações web modernas com React e Next.js, além de estudar tecnologias AWS Cloud. Confira meu <CustomLink href={'/works/medlife'}>trabalho atual</CustomLink>.
                 </Paragraph>
 
-                <Box align="center" my={4}>
+                <Box align="center" my={6}>
                     <CustomLink href="/works">
-                        <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">My portfolio</Button>
+                        <Button 
+                            rightIcon={<ChevronRightIcon />} 
+                            colorScheme="teal"
+                            size="lg"
+                            _hover={{
+                                transform: 'translateY(-2px)',
+                                boxShadow: 'lg',
+                            }}
+                            transition="all 0.2s"
+                        >
+                            Ver Portfolio
+                        </Button>
                     </CustomLink>
                 </Box>
             </Section>
-            <Section delay={0.3}>
+
+            {/* Tech Stack */}
+            <Section delay={0.15}>
+                <Heading as="h3" variant="section-title">
+                    Tech Stack
+                </Heading>
+                <Devicon />
+            </Section>
+
+            <Divider borderColor="whiteAlpha.200" my={6} />
+
+            {/* Skills Section */}
+            <SkillsSection />
+
+            <Divider borderColor="whiteAlpha.200" my={6} />
+
+            {/* Timeline Section */}
+            <TimelineSection />
+
+            <Divider borderColor="whiteAlpha.200" my={6} />
+
+            {/* Bio Section */}
+            <Section delay={0.4}>
                 <Heading as="h3" variant="section-title">
                     Bio
                 </Heading>
                 <BioSection>
                     <BioYear>1997</BioYear>
-                    Born in Sumaré/SP, Brazil.
+                    Nascido em Sumaré/SP, Brasil.
                 </BioSection>
                 <BioSection>
                     <BioYear>2015</BioYear>
-                    Administrative Assistant at CJ Lan House
+                    Assistente Administrativo na CJ Lan House
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    joined FATEC-campinas to study Systems Analysis and Development
+                    Ingressou na FATEC-Campinas - Análise e Desenvolvimento de Sistemas
                 </BioSection>
                 <BioSection>
                     <BioYear>2023</BioYear>
-                    Systems Developer Intern at Sottelli
+                    Estagiário de Desenvolvimento de Sistemas na Sottelli
                 </BioSection>
             </Section>
 
-            <Section delay={0.4}>
-                <Heading as="h3" variant="section-title">
-                    I ♥
-                </Heading>
-                <Paragraph>
-                    Rock Music, Movies, Series, Animes, Games and Programing
-                </Paragraph>
-            </Section>
             <Section delay={0.5}>
+                <Heading as="h3" variant="section-title">
+                    Interesses
+                </Heading>
+                <Flex gap={3} flexWrap="wrap">
+                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
+                        Rock Music
+                    </Badge>
+                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
+                        Movies & Series
+                    </Badge>
+                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
+                        Animes
+                    </Badge>
+                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
+                        Games
+                    </Badge>
+                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
+                        Programming
+                    </Badge>
+                </Flex>
+            </Section>
+
+            <Divider borderColor="whiteAlpha.200" my={6} />
+
+            <Section delay={0.6}>
                 <Heading as="h3" variant="section-title">
                     Social Links
                 </Heading>
