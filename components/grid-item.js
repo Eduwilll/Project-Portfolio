@@ -30,7 +30,9 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
           overflow="hidden" 
           borderRadius="12px" 
           width="100%"
+          height="0"
           paddingBottom="62.5%"
+          bg="gray.800"
         >
           <Image
             src={thumbnail}
@@ -40,11 +42,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
             sizes="(max-width: 768px) 100vw, 50vw"
             style={{ 
               objectFit: 'cover',
-              position: 'absolute',
-              top: 0,
-              left: 0,
-              width: '100%',
-              height: '100%'
+              objectPosition: 'center'
             }}
           />
         </Box>
