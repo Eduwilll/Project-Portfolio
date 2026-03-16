@@ -6,25 +6,25 @@ const MotionBox = motion(Box)
 
 const experiences = [
   {
-    period: '2024 - Presente',
-    title: 'Desenvolvedor Full Stack',
-    company: 'Freelancer',
-    description: 'Desenvolvimento de aplicações web e mobile, criação de dashboards e automações.',
-    tags: ['React', 'Next.js', 'Node.js', 'Python']
+    period: '2023 - Presente',
+    title: 'Estagiário de Desenvolvimento',
+    company: 'Sottelli',
+    description: 'Desenvolvimento de sistemas e aplicações empresariais, trabalhando com tecnologias modernas.',
+    tags: ['Java', 'Salesforce', 'Cloud', 'APIs']
   },
   {
-    period: '2023 - 2024',
-    title: 'Desenvolvedor Frontend',
-    company: 'Projetos Pessoais',
-    description: 'Foco em interfaces modernas e experiência do usuário com React e TypeScript.',
-    tags: ['TypeScript', 'React', 'Chakra UI']
+    period: '2020 - Presente',
+    title: 'Análise e Desenvolvimento de Sistemas',
+    company: 'FATEC Campinas',
+    description: 'Graduação em tecnologia focada em desenvolvimento de software e sistemas.',
+    tags: ['Java', 'Python', 'SQL', 'Algoritmos']
   },
   {
-    period: '2022 - 2023',
-    title: 'Início na Programação',
-    company: 'Autodidata',
-    description: 'Estudos intensivos em desenvolvimento web, algoritmos e estruturas de dados.',
-    tags: ['JavaScript', 'HTML/CSS', 'Git']
+    period: '2015 - 2020',
+    title: 'Assistente Administrativo',
+    company: 'CJ Lan House',
+    description: 'Gestão administrativa, atendimento ao cliente e manutenção de sistemas.',
+    tags: ['Gestão', 'Atendimento', 'TI']
   }
 ]
 
