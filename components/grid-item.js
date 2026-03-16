@@ -22,17 +22,30 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 )
 
 export const WorkGridItem = ({ children, id, title, thumbnail }) => (
-  <Box w="100%" textAlign="center" display="flex" flexDirection="column" h="100%">
+  <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} scroll={false}>
-      <LinkBox cursor="pointer" display="flex" flexDirection="column" h="100%">
-        <Box position="relative" overflow="hidden" borderRadius="12px" aspectRatio="16/10">
+      <LinkBox cursor="pointer">
+        <Box 
+          position="relative" 
+          overflow="hidden" 
+          borderRadius="12px" 
+          width="100%"
+          paddingBottom="62.5%"
+        >
           <Image
             src={thumbnail}
             alt={title}
-            className="grid-item-thumbnail"
             placeholder="blur"
             fill
-            style={{ objectFit: 'cover' }}
+            sizes="(max-width: 768px) 100vw, 50vw"
+            style={{ 
+              objectFit: 'cover',
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              width: '100%',
+              height: '100%'
+            }}
           />
         </Box>
         <LinkOverlay href={`/works/${id}`}>
