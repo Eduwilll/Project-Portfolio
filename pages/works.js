@@ -15,7 +15,7 @@ const Works = () => (
             <Heading as="h3" fontSize={20} mb={4} variant="section-title">
                 Works
             </Heading>
-            <SimpleGrid columns={[1, 1, 2]} gap={6}>
+            <SimpleGrid columns={[1, 1, 2]} gap={6} alignItems="start">
                 <Section>
                     <WorkGridItem
                         id="medlife"
