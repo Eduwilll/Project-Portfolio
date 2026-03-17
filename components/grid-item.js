@@ -21,29 +21,46 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
   </Box>
 )
 
-export const WorkGridItem = ({ children, id, title, thumbnail }) => (
+export const WorkGridItem = ({ children, id, title, thumbnail, isCurrent }) => (
   <Box w="100%" textAlign="center">
     <NextLink href={`/works/${id}`} scroll={false}>
-      <LinkBox 
+      <LinkBox
         cursor="pointer"
         role="group"
         transition="transform 0.2s ease"
         _hover={{ transform: 'translateY(-4px)' }}
       >
-        <Box 
-          position="relative" 
-          overflow="hidden" 
-          borderRadius="12px" 
+        <Box
+          position="relative"
+          overflow="hidden"
+          borderRadius="12px"
           width="100%"
           height="0"
           paddingBottom="62.5%"
           bg="gray.800"
           boxShadow="lg"
           transition="all 0.3s ease"
-          _groupHover={{ 
+          _groupHover={{
             boxShadow: '0 20px 40px -12px rgba(0, 0, 0, 0.5)',
           }}
         >
+          {isCurrent && (
+            <Box
+              position="absolute"
+              top={2}
+              right={2}
+              bg="teal.500"
+              color="white"
+              px={2}
+              py={1}
+              borderRadius="md"
+              fontSize="xs"
+              fontWeight="bold"
+              zIndex={2}
+            >
+              Current
+            </Box>
+          )}
           <Image
             src={thumbnail}
             alt={title}
@@ -63,23 +80,23 @@ export const WorkGridItem = ({ children, id, title, thumbnail }) => (
             alignItems="center"
             justifyContent="center"
           >
-            <Text 
-              color="white" 
-              fontWeight="bold" 
+            <Text
+              color="white"
+              fontWeight="bold"
               fontSize="sm"
               bg="teal.500"
               px={4}
               py={2}
               borderRadius="md"
             >
-              Ver Projeto
+              View Project
             </Text>
           </Box>
         </Box>
         <LinkOverlay href={`/works/${id}`}>
-          <Text 
-            mt={3} 
-            fontSize={18} 
+          <Text
+            mt={3}
+            fontSize={18}
             fontWeight="semibold"
             transition="color 0.2s ease"
             _groupHover={{ color: 'teal.300' }}
