@@ -6,25 +6,32 @@ const MotionBox = motion(Box)
 
 const experiences = [
   {
-    period: '2023 - Presente',
-    title: 'Estagiário de Desenvolvimento',
+    period: '2024 - Present',
+    title: 'Freelancer',
+    company: 'Web Development & Process Automation',
+    description: 'Independent work in web development and automation processes, exploring DevOps and cloud technologies.',
+    tags: ['React', 'Node.js', 'AWS', 'DevOps']
+  },
+  {
+    period: '2023 - 2024',
+    title: 'Development Intern',
     company: 'Sottelli',
-    description: 'Desenvolvimento de sistemas e aplicações empresariais, trabalhando com tecnologias modernas.',
+    description: 'Development of business systems and applications, working with modern technologies.',
     tags: ['Java', 'Salesforce', 'Cloud', 'APIs']
   },
   {
-    period: '2020 - Presente',
-    title: 'Análise e Desenvolvimento de Sistemas',
+    period: '2020 - 2025',
+    title: 'Systems Analysis and Development',
     company: 'FATEC Campinas',
-    description: 'Graduação em tecnologia focada em desenvolvimento de software e sistemas.',
-    tags: ['Java', 'Python', 'SQL', 'Algoritmos']
+    description: 'Degree in technology focused on software and systems development.',
+    tags: ['Java', 'Python', 'SQL', 'Algorithms']
   },
   {
     period: '2015 - 2020',
-    title: 'Assistente Administrativo',
+    title: 'Administrative Assistant',
     company: 'CJ Lan House',
-    description: 'Gestão administrativa, atendimento ao cliente e manutenção de sistemas.',
-    tags: ['Gestão', 'Atendimento', 'TI']
+    description: 'Administrative management, customer service and system maintenance.',
+    tags: ['Management', 'Customer Service', 'IT']
   }
 ]
 
@@ -49,7 +56,7 @@ const TimelineItem = ({ experience, index, isLast }) => (
         bg="whiteAlpha.200"
       />
     )}
-    
+
     {/* Timeline dot */}
     <Box
       position="absolute"

@@ -33,9 +33,9 @@ const Home = () => (
                     <Heading as="h2" variant="page-title" fontSize={{ base: '3xl', md: '4xl' }}>
                         Eduardo Fabricio
                     </Heading>
-                    <Text 
-                        fontSize="lg" 
-                        color="teal.300" 
+                    <Text
+                        fontSize="lg"
+                        color="teal.300"
                         fontWeight="medium"
                         mt={1}
                     >
@@ -92,13 +92,13 @@ const Home = () => (
                     About
                 </Heading>
                 <Paragraph>
-                    Systems Analysis and Development graduate from Fatec - Campinas and cybersecurity enthusiast based in Sao Paulo, Brazil. Currently working as a Freelancer focused on Web Development and Process Automation. AWS Cloud Foundation certified. Check out my <CustomLink href={'/works/medlife'}>current work</CustomLink>.
+                    Systems Analysis and Development graduate from Fatec - Campinas (2025) and cybersecurity enthusiast based in Sao Paulo, Brazil. Currently working as a Freelancer focused on Web Development and Process Automation. AWS Cloud Foundation certified and exploring DevOps. Check out my <CustomLink href={'/works/medlife'}>current work</CustomLink>.
                 </Paragraph>
 
                 <Box align="center" my={6}>
                     <CustomLink href="/works">
-                        <Button 
-                            rightIcon={<ChevronRightIcon />} 
+                        <Button
+                            rightIcon={<ChevronRightIcon />}
                             colorScheme="teal"
                             size="lg"
                             _hover={{
@@ -140,25 +140,33 @@ const Home = () => (
                 </Heading>
                 <BioSection>
                     <BioYear>1997</BioYear>
-                    Nascido em Sumaré/SP, Brasil.
+                    Born in Sumaré/SP, Brazil.
                 </BioSection>
                 <BioSection>
                     <BioYear>2015</BioYear>
-                    Assistente Administrativo na CJ Lan House
+                    Administrative Assistant at CJ Lan House
                 </BioSection>
                 <BioSection>
                     <BioYear>2020</BioYear>
-                    Ingressou na FATEC-Campinas - Análise e Desenvolvimento de Sistemas
+                    Started Systems Analysis and Development at FATEC-Campinas
                 </BioSection>
                 <BioSection>
                     <BioYear>2023</BioYear>
-                    Estagiário de Desenvolvimento de Sistemas na Sottelli
+                    Systems Development Intern at Sottelli (until 2024)
+                </BioSection>
+                <BioSection>
+                    <BioYear>2025</BioYear>
+                    Graduated from FATEC-Campinas with a degree in Systems Analysis and Development
+                </BioSection>
+                <BioSection>
+                    <BioYear>2024</BioYear>
+                    Obtained AWS Cloud Foundation certification and started exploring DevOps. Began freelancing in Web Development and Process Automation.
                 </BioSection>
             </Section>
 
             <Section delay={0.5}>
                 <Heading as="h3" variant="section-title">
-                    Interesses
+                    Interests
                 </Heading>
                 <Flex gap={3} flexWrap="wrap">
                     <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
