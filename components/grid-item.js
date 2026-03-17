@@ -65,7 +65,8 @@ export const WorkGridItem = ({ children, id, title, thumbnail, isCurrent }) => (
             src={thumbnail}
             alt={title}
             placeholder="blur"
-            fill
+            width="100%"
+            height="100%"
             sizes="(max-width: 768px) 100vw, 50vw"
             style={{ objectFit: 'cover', objectPosition: 'center' }}
           />
