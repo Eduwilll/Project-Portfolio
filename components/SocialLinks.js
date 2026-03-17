@@ -14,7 +14,7 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
         transition="all 0.3s ease"
         border="1px solid"
         borderColor="transparent"
-        _hover={{ 
+        _hover={{
           transform: 'translateY(-4px)',
           bg: 'whiteAlpha.200',
           borderColor: 'teal.500',
@@ -28,7 +28,6 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
               alt={label}
               width={32}
               height={32}
-              style={{ objectFit: 'contain' }}
             />
           </Box>
           <Box>
