@@ -10,13 +10,12 @@ import {
     Center,
     Image,
   } from '@chakra-ui/react'
-  import Layout from '../../components/layouts/article'
+  import Layout from '../../components/layouts/work'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
   const Cryptography = () => (
     <Layout title="Cryptography Project">
-      <Container>
         <Title>
           Cryptography Project <Badge>2023</Badge>
         </Title>
@@ -25,7 +24,7 @@ import {
         </Center>
         <P>
           A project developed as a requirement for the Information Security course, exploring
-          various cryptographic technologies and providing a user-friendly interface for 
+          various cryptographic technologies and providing a user-friendly interface for
           encryption and checksum generation.
         </P>
         <P>
@@ -39,7 +38,7 @@ import {
           <ListItem>Tkinter (Graphical User Interface)</ListItem>
           <ListItem>Base64 encoding for text encryption</ListItem>
         </UnorderedList>
-  
+
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -66,11 +65,11 @@ import {
             </Link>
           </ListItem>
         </List>
-  
+
         <Heading as="h4" fontSize={16} my={6}>
           <Center>Project Highlights</Center>
         </Heading>
-  
+
         <UnorderedList my={4}>
           <ListItem>
             <Link href="https://github.com/Eduwilll/criptografia-SI" target="_blank">
@@ -87,16 +86,13 @@ import {
             </Link>
           </ListItem>
         </UnorderedList>
-  
+
         <SimpleGrid columns={2} gap={2}>
           <WorkImage src="/images/works/cryptography/cryptography-thumb.png" alt="Main interface" />
           <WorkImage src="/images/works/cryptography/cryptography-screenshot2.png" alt="Encryption process" />
         </SimpleGrid>
         <WorkImage src="/images/works/cryptography/preview.gif" alt="GIF" />
-        
- 
-      </Container>
     </Layout>
   )
-  
+
   export default Cryptography

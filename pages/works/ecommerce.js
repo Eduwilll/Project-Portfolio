@@ -10,14 +10,13 @@ import {
     Center,
     Image,
   } from '@chakra-ui/react'
-  import Layout from '../../components/layouts/article'
+  import Layout from '../../components/layouts/work'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
-  
+
   const Ecommerce = () => (
     <Layout title="Electronic Components E-commerce">
-      <Container>
         <Title>
           Electronic Components E-commerce <Badge>2021</Badge>
         </Title>
@@ -64,11 +63,11 @@ import {
             </Link>
           </ListItem>
         </List>
-  
+
         <Heading as="h4" fontSize={16} my={6}>
           <Center>Project Highlights</Center>
         </Heading>
-  
+
         <UnorderedList my={4}>
           <ListItem>
             <Link href="https://github.com/Eduwilll/PHP-E_commerce" target="_blank">
@@ -85,7 +84,7 @@ import {
             </Link>
           </ListItem>
         </UnorderedList>
-  
+
         <SimpleGrid columns={2} gap={2}>
           <WorkImage src="/images/works/ecommerce/ecommerce-screenshot1.png" alt="Home page" />
           <WorkImage src="/images/works/ecommerce/ecommerce-screenshot2.jpeg" alt="Shopping cart" />
@@ -93,8 +92,7 @@ import {
         <WorkImage src="/images/works/ecommerce/ecommerce-screenshot3.jpeg" alt="User Login" />
         <WorkImage src="/images/works/ecommerce/ecommerce-screenshot5.jpeg" alt="Admin dashboard" />
         <WorkImage src="/images/works/ecommerce/ecommerce-screenshot6.jpeg" alt="Admin dashboard" />
-      </Container>
     </Layout>
   )
-  
+
   export default Ecommerce

@@ -13,7 +13,7 @@ import {
   AlertIcon,
   AlertTitle,
 } from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
+import Layout from '../../components/layouts/work'
 // import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, Meta } from '../../components/work'
 import P from '../../components/paragraph'
@@ -21,7 +21,6 @@ import FigmaEmbed from '../../components/figmaEmbed'
 
 const Work = () => (
   <Layout title="MEDLIFE: Prescription Medication Marketplace">
-    <Container>
       <Title>
         MEDLIFE <Badge>2024</Badge>
       </Title>
@@ -106,7 +105,6 @@ const Work = () => (
         <ListItem>Integration with local pharmacies for medication fulfillment</ListItem>
         <ListItem>Reminder system for medication schedules and refills</ListItem>
       </UnorderedList>
-    </Container>
   </Layout>
 )
 

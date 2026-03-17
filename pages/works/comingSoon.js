@@ -10,14 +10,13 @@ import {
   Center,
   Image,
 } from '@chakra-ui/react'
-import Layout from '../../components/layouts/article'
+import Layout from '../../components/layouts/work'
 import { ExternalLinkIcon } from '@chakra-ui/icons'
 import { Title, WorkImage, Meta } from '../../components/work'
 import P from '../../components/paragraph'
 
 const Work = () => (
   <Layout title="comingSoon">
-    <Container>
       <Title>
         Coming Soon <Badge>2022-2022</Badge>
       </Title>
@@ -33,7 +32,7 @@ const Work = () => (
       <UnorderedList ml={4} my={4}>
         <ListItem>Coming soon!</ListItem>
         <ListItem>2022</ListItem>
-        
+
       </UnorderedList>
 
       <List ml={4} my={4}>
@@ -81,7 +80,6 @@ const Work = () => (
       </SimpleGrid>
       <WorkImage src="/images/works/thumbComingSoon.jpg" alt="amembo" />
       <WorkImage src="/images/works/thumbComingSoon.jpg" alt="amembo" />
-    </Container>
   </Layout>
 )
 
