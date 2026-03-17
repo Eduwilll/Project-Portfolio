@@ -89,10 +89,10 @@ const Home = () => (
             {/* About Section */}
             <Section delay={0.1}>
                 <Heading as="h3" variant="section-title">
-                    Sobre
+                    About
                 </Heading>
                 <Paragraph>
-                    Estudante de Análise e Desenvolvimento de Sistemas na Fatec - Campinas e entusiasta de cibersegurança baseado em São Paulo, Brasil. Atualmente focado no desenvolvimento de aplicações web modernas com React e Next.js, além de estudar tecnologias AWS Cloud. Confira meu <CustomLink href={'/works/medlife'}>trabalho atual</CustomLink>.
+                    Systems Analysis and Development graduate from Fatec - Campinas and cybersecurity enthusiast based in Sao Paulo, Brazil. Currently working as a Freelancer focused on Web Development and Process Automation. AWS Cloud Foundation certified. Check out my <CustomLink href={'/works/medlife'}>current work</CustomLink>.
                 </Paragraph>
 
                 <Box align="center" my={6}>
@@ -107,7 +107,7 @@ const Home = () => (
                             }}
                             transition="all 0.2s"
                         >
-                            Ver Portfolio
+                            View Portfolio
                         </Button>
                     </CustomLink>
                 </Box>
