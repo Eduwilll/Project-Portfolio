@@ -1,18 +1,23 @@
-import { Box, useColorModeValue } from '@chakra-ui/react';
+import { Box, useColorModeValue, Icon, Flex, Text } from '@chakra-ui/react';
+import { IoSparkles } from 'react-icons/io5';
 
 const IntroBox = () => {
   return (
-    <Box 
-      borderRadius="lg" 
-      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')} 
-      p={3} 
-      mb={6} 
-      align="center"
-      fontWeight="medium"
-      //fontSize="lg"
-      //p={3} mb={6} align="center"
+    <Box
+      borderRadius="xl"
+      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
+      border="1px solid"
+      borderColor={useColorModeValue('gray.200', 'whiteAlpha.100')}
+      p={4}
+      mb={8}
+      backdropFilter="blur(10px)"
     >
-      Hello, I&apos;m a student at Fatec Campinas in Brazil and I am studying Systems Analysis and Development
+      <Flex align="center" justify="center" gap={2}>
+        <Icon as={IoSparkles} color="teal.400" />
+        <Text fontWeight="medium" fontSize="sm">
+          Available for new job opportunities
+        </Text>
+      </Flex>
     </Box>
   );
 };

@@ -1,33 +1,44 @@
 import React from 'react';
-import { Box, Link, Tooltip, Wrap, WrapItem, keyframes } from '@chakra-ui/react';
+import { Box, Link, Tooltip, Wrap, WrapItem, Text, Flex, Icon } from '@chakra-ui/react';
 import Image from 'next/image';
+import { IoOpenOutline } from 'react-icons/io5';
 
-const growAndElevateKeyframes = keyframes`
-  0% { transform: scale(1) translateY(0); }
-  100% { transform: scale(1.1) translateY(-5px); }
-`;
-
-const growAndElevateAnimation = `${growAndElevateKeyframes} 0.3s ease-out forwards`;
-
-const AnimatedSocialLink = ({ href, label, iconSrc }) => (
-  <Link href={href} target="_blank" rel="noopener noreferrer">
-    <Tooltip label={label}>
+const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
+  <Link href={href} target="_blank" rel="noopener noreferrer" _hover={{ textDecoration: 'none' }}>
+    <Tooltip label={description || label} placement="top" hasArrow>
       <Box
         position="relative"
-        width="50px"
-        height="50px"
-        transition="all 0.3s"
-        _hover={{ 
-          animation: growAndElevateAnimation,
-          boxShadow: "lg"
+        bg="whiteAlpha.100"
+        borderRadius="xl"
+        p={4}
+        transition="all 0.3s ease"
+        border="1px solid"
+        borderColor="transparent"
+        _hover={{
+          transform: 'translateY(-4px)',
+          bg: 'whiteAlpha.200',
+          borderColor: 'teal.500',
+          boxShadow: '0 10px 30px -10px rgba(0, 128, 128, 0.3)'
         }}
       >
-        <Image
-          src={iconSrc}
-          alt={label}
-          layout="fill"
-          objectFit="contain"
-        />
+        <Flex align="center" gap={3}>
+          <Box position="relative" width="32px" height="32px" flexShrink={0}>
+            <Image
+              src={iconSrc}
+              alt={label}
+              width={32}
+              height={32}
+            />
+          </Box>
+          <Box>
+            <Flex align="center" gap={1}>
+              <Text fontWeight="semibold" fontSize="sm" color="white">
+                {label}
+              </Text>
+              <Icon as={IoOpenOutline} boxSize={3} color="whiteAlpha.600" />
+            </Flex>
+          </Box>
+        </Flex>
       </Box>
     </Tooltip>
   </Link>
@@ -38,29 +49,26 @@ const SocialLinks = () => {
     {
       href: "https://www.linkedin.com/in/eduardo-fabricio-goza-669b641b4/",
       label: "LinkedIn",
-      iconSrc: "/images/icons/linkedin/linkedin-original.svg"
+      iconSrc: "/images/icons/linkedin/linkedin-original.svg",
+      description: "Conecte-se comigo no LinkedIn"
     },
     {
       href: "https://github.com/Eduwilll",
       label: "GitHub",
-      iconSrc: "/images/icons/github/github-original.svg"
+      iconSrc: "/images/icons/github/github-original.svg",
+      description: "Veja meus repositorios"
     },
     {
       href: "https://www.salesforce.com/trailblazer/eduardofabriciog",
-      label: "Trailhead - Salesforce",
-      iconSrc: "/images/icons/salesforce/Trailhead_old.svg"
+      label: "Trailhead",
+      iconSrc: "/images/icons/salesforce/Trailhead_old.svg",
+      description: "Meu perfil Salesforce Trailhead"
     },
-
   ];
 
   return (
-    <Box
-      flexShrink={0}
-      mt={{ base: 4, md: 0 }}
-      ml={{ md: 6 }}
-      align="left"
-    >
-      <Wrap spacing='15px' align='center' justify='left'>
+    <Box mt={2}>
+      <Wrap spacing={4} align='stretch'>
         {socialLinks.map((link, index) => (
           <WrapItem key={index}>
             <AnimatedSocialLink {...link} />

@@ -10,14 +10,13 @@ import {
     Center,
     Image,
   } from '@chakra-ui/react'
-  import Layout from '../../components/layouts/article'
+  import Layout from '../../components/layouts/work'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
-  
+
   const Chatbot = () => (
     <Layout title="Chatbot for LLAS Coxitas S/A">
-      <Container>
         <Title>
           Chatbot for LLAS Coxitas S/A <Badge>2023</Badge>
         </Title>
@@ -38,7 +37,7 @@ import {
           <ListItem>Twilio API integration for WhatsApp messaging</ListItem>
           <ListItem>PyCEP Correios for ZIP code lookup and delivery fee calculation</ListItem>
         </UnorderedList>
-  
+
         <List ml={4} my={4}>
           <ListItem>
             <Meta>Platform</Meta>
@@ -65,11 +64,11 @@ import {
             </Link>
           </ListItem>
         </List>
-  
+
         <Heading as="h4" fontSize={16} my={6}>
           <Center>Project Highlights</Center>
         </Heading>
-  
+
         <UnorderedList my={4}>
           <ListItem>
             <Link href="https://github.com/Eduwilll/whatsapp-automation" target="_blank">
@@ -86,15 +85,14 @@ import {
             </Link>
           </ListItem>
         </UnorderedList>
-  
+
         <SimpleGrid columns={2} gap={2}>
           <WorkImage src="/images/works/chatbotLLAS/IES300_INTERFACE_02.png" alt="Chatbot interface" />
           <WorkImage src="/images/works/chatbotLLAS/IES300_INTERFACE_03.png" alt="Conversation flow" />
         </SimpleGrid>
         <WorkImage src="/images/works/chatbotLLAS/IES300_INTERFACE_04.png" alt="Menu display" />
         <WorkImage src="/images/works/chatbotLLAS/IES300_INTERFACE_05.png" alt="Delivery fee calculation" />
-      </Container>
     </Layout>
   )
-  
+
   export default Chatbot

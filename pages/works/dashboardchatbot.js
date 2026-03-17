@@ -10,14 +10,13 @@ import {
     Center,
     Image,
   } from '@chakra-ui/react'
-  import Layout from '../../components/layouts/article'
+  import Layout from '../../components/layouts/work'
   import { ExternalLinkIcon } from '@chakra-ui/icons'
   import { Title, WorkImage, Meta } from '../../components/work'
   import P from '../../components/paragraph'
-  
+
   const ChatbotDashboard = () => (
     <Layout title="Chatbot Dashboard">
-      <Container>
         <Title>
           Chatbot Dashboard <Badge>2024</Badge>
         </Title>
@@ -53,11 +52,11 @@ import {
             <span>2024/10/07</span>
           </ListItem>
         </List>
-  
+
         <Heading as="h4" fontSize={16} my={6}>
           <Center>Project Highlights</Center>
         </Heading>
-  
+
         <UnorderedList my={4}>
           <ListItem>
             <Link href="https://github.com/Eduwilll/LLA-Coxitas-Dashboard" target="_blank">
@@ -74,14 +73,12 @@ import {
             </Link>
           </ListItem>
         </UnorderedList>
-  
+
         <SimpleGrid columns={2} gap={2}>
           <WorkImage src="https://i.imgur.com/4IC7Hrt.jpeg" alt="Chatbot Home Page" />
           <WorkImage src="https://i.imgur.com/sEXh0oh.jpeg" alt="Chatbot Admin Page" />
         </SimpleGrid>
-      </Container>
     </Layout>
   )
-  
+
   export default ChatbotDashboard
-  
