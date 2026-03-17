@@ -26,7 +26,8 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
             <Image
               src={iconSrc}
               alt={label}
-              fill
+              width={32}
+              height={32}
               style={{ objectFit: 'contain' }}
             />
           </Box>
