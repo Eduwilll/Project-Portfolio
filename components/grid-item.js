@@ -65,7 +65,7 @@ export const WorkGridItem = ({ children, id, title, thumbnail, isCurrent }) => (
             src={thumbnail}
             alt={title}
             placeholder="blur"
-            fill={true}
+            fill="true"
             sizes="(max-width: 768px) 100vw, 50vw"
           />
           <Box
