@@ -35,5 +35,10 @@
     "eslint-config-next": "16.1.7",
     "postcss": "^8.4.47",
     "prettier": "^3.5.2"
+  },
+  "pnpm": {
+    "overrides": {
+      "prismjs": "^1.29.0"
+    }
   }
 }
