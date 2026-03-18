@@ -2,7 +2,7 @@ import { Box, Heading, SimpleGrid, Text, Progress, VStack, HStack, Icon } from '
 import { motion } from 'framer-motion'
 import Section from './section'
 
-const MotionBox = motion(Box)
+const MotionBox = motion.create(Box)
 
 const skills = [
   { name: 'JavaScript', level: 90, color: 'yellow.400' },

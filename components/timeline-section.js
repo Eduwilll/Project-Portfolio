@@ -2,7 +2,7 @@ import { Box, Heading, Text, VStack, HStack, Badge, Flex } from '@chakra-ui/reac
 import { motion } from 'framer-motion'
 import Section from './section'
 
-const MotionBox = motion(Box)
+const MotionBox = motion.create(Box)
 
 const experiences = [
   {

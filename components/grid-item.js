@@ -23,89 +23,88 @@ export const GridItem = ({ children, href, title, thumbnail }) => (
 
 export const WorkGridItem = ({ children, id, title, thumbnail, isCurrent }) => (
   <Box w="100%" textAlign="center">
-    <NextLink href={`/works/${id}`} passHref legacyBehavior scroll={false}>
-      <LinkBox
-        cursor="pointer"
-        role="group"
-        transition="transform 0.2s ease"
-        _hover={{ transform: 'translateY(-4px)' }}
+    <LinkBox
+      cursor="pointer"
+      role="group"
+      transition="transform 0.2s ease"
+      _hover={{ transform: 'translateY(-4px)' }}
+    >
+      <Box
+        position="relative"
+        overflow="hidden"
+        borderRadius="12px"
+        width="100%"
+        height="0"
+        paddingBottom="62.5%"
+        bg="gray.800"
+        boxShadow="lg"
+        transition="all 0.3s ease"
+        _groupHover={{
+          boxShadow: '0 20px 40px -12px rgba(0, 0, 0, 0.5)',
+        }}
       >
-        <Box
-          position="relative"
-          overflow="hidden"
-          borderRadius="12px"
-          width="100%"
-          height="0"
-          paddingBottom="62.5%"
-          bg="gray.800"
-          boxShadow="lg"
-          transition="all 0.3s ease"
-          _groupHover={{
-            boxShadow: '0 20px 40px -12px rgba(0, 0, 0, 0.5)',
-          }}
-        >
-          {isCurrent && (
-            <Box
-              position="absolute"
-              top={2}
-              right={2}
-              bg="teal.500"
-              color="white"
-              px={2}
-              py={1}
-              borderRadius="md"
-              fontSize="xs"
-              fontWeight="bold"
-              zIndex={2}
-            >
-              Current
-            </Box>
-          )}
-          <Image
-            src={thumbnail}
-            alt={title}
-            placeholder="blur"
-            fill="true"
-            sizes="(max-width: 768px) 100vw, 50vw"
-          />
+        {isCurrent && (
           <Box
             position="absolute"
-            inset={0}
-            bg="blackAlpha.400"
-            opacity={0}
-            transition="opacity 0.3s ease"
-            _groupHover={{ opacity: 1 }}
-            display="flex"
-            alignItems="center"
-            justifyContent="center"
+            top={2}
+            right={2}
+            bg="teal.500"
+            color="white"
+            px={2}
+            py={1}
+            borderRadius="md"
+            fontSize="xs"
+            fontWeight="bold"
+            zIndex={2}
           >
-            <Text
-              color="white"
-              fontWeight="bold"
-              fontSize="sm"
-              bg="teal.500"
-              px={4}
-              py={2}
-              borderRadius="md"
-            >
-              View Project
-            </Text>
+            Current
           </Box>
-        </Box>
-        <LinkOverlay href={`/works/${id}`}>
+        )}
+        <Image
+          src={thumbnail}
+          alt={title}
+          placeholder="blur"
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          style={{ objectFit: 'cover' }}
+        />
+        <Box
+          position="absolute"
+          inset={0}
+          bg="blackAlpha.400"
+          opacity={0}
+          transition="opacity 0.3s ease"
+          _groupHover={{ opacity: 1 }}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+        >
           <Text
-            mt={3}
-            fontSize={18}
-            fontWeight="semibold"
-            transition="color 0.2s ease"
-            _groupHover={{ color: 'teal.300' }}
+            color="white"
+            fontWeight="bold"
+            fontSize="sm"
+            bg="teal.500"
+            px={4}
+            py={2}
+            borderRadius="md"
           >
-            {title}
+            View Project
           </Text>
-        </LinkOverlay>
-        <Text fontSize={14} color="whiteAlpha.700" mt={1}>{children}</Text>
-      </LinkBox>
-    </NextLink>
+        </Box>
+      </Box>
+      <LinkOverlay as={NextLink} href={`/works/${id}`}>
+        <Text
+          mt={3}
+          fontSize={18}
+          fontWeight="semibold"
+          transition="color 0.2s ease"
+          _groupHover={{ color: 'teal.300' }}
+        >
+          {title}
+        </Text>
+      </LinkOverlay>
+      <Text fontSize={14} color="whiteAlpha.700" mt={1}>{children}</Text>
+    </LinkBox>
   </Box>
 )
 

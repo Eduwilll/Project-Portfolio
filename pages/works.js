@@ -89,8 +89,11 @@ const Works = () => (
                             <Image
                                 src={thumbMedlife}
                                 alt="Medlife Healthcare Management System"
-                                fill="true"
-                                priority={true}                            />
+                                fill
+                                sizes="(max-width: 768px) 100vw, 300px"
+                                style={{ objectFit: 'cover' }}
+                                priority
+                            />
                         </Box>
                     </Flex>
                 </Box>

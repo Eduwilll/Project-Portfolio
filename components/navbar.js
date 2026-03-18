@@ -21,18 +21,18 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
   const inactiveColor = useColorModeValue('gray200', 'whiteAlpha.900')
   return (
-        <NextLink href={href} passHref legacyBehavior scroll={false}>
-      <Link
-        p={2}
-        bg={active ? 'grassTeal' : undefined}
-        color={active ? '#202023' : inactiveColor}
-        target={target}
-        
-        {...props}
-      >
-        {children}
-      </Link>
-    </NextLink>
+    <Link
+      as={NextLink}
+      href={href}
+      scroll={false}
+      p={2}
+      bg={active ? 'grassTeal' : undefined}
+      color={active ? '#202023' : inactiveColor}
+      target={target}
+      {...props}
+    >
+      {children}
+    </Link>
   )
 }
 
@@ -102,15 +102,15 @@ const Navbar = props => {
                 aria-label="Options"
               />
               <MenuList>
-                <NextLink href="/" passHref legacyBehavior>
-                  <MenuItem as={Link}>About</MenuItem>
-                </NextLink>
-                <NextLink href="/works" passHref legacyBehavior>
-                  <MenuItem as={Link}>Works</MenuItem>
-                </NextLink>
-                <NextLink href="/posts" passHref legacyBehavior>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink>
+                <MenuItem as={NextLink} href="/">
+                  About
+                </MenuItem>
+                <MenuItem as={NextLink} href="/works">
+                  Works
+                </MenuItem>
+                <MenuItem as={NextLink} href="/posts">
+                  Posts
+                </MenuItem>
                 <MenuItem
                   as={Link}
                   href="https://github.com/Eduwilll"

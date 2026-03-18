@@ -24,15 +24,10 @@ const AnimatedIconTooltip = ({ src, alt, tooltipText }) => (
       <Image
         src={src}
         alt={alt}
-        layout="fill"
-        objectFit="contain"
+        fill
+        sizes="50px"
+        style={{ objectFit: 'contain' }}
         onError={() => console.error(`Failed to load image: ${src}`)}
-        bordercolor="whiteAlpha.800"
-        borderwidth={2}
-        borderstyle="none"
-        maxwidth="50px"
-        display="inline-block"
-        borderradius='full'
       />
     </Box>
   </Tooltip>
