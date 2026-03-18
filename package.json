@@ -21,7 +21,7 @@
     "devicon": "^2.15.1",
     "framer-motion": "^12.0.6",
     "gray-matter": "^4.0.3",
-    "next": "^15.2.0",
+    "next": "16.1.7",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^19.0.0",
@@ -32,7 +32,7 @@
   },
   "devDependencies": {
     "eslint": "^9.16.0",
-    "eslint-config-next": "15.1.0",
+    "eslint-config-next": "16.1.7",
     "postcss": "^8.4.47",
     "prettier": "^3.5.2"
   }
