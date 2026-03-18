@@ -28,6 +28,7 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
               alt={label}
               width={32}
               height={32}
+              style={{ width: '100%', height: 'auto' }}
             />
           </Box>
           <Box>
