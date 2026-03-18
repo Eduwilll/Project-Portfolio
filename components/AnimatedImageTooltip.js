@@ -1,5 +1,6 @@
 import React from 'react';
-import { Box, Wrap, WrapItem, Tooltip, keyframes } from '@chakra-ui/react';
+import { Box, Wrap, WrapItem, Tooltip } from '@chakra-ui/react';
+import { keyframes } from '@emotion/react';
 import Image from 'next/image';
 
 const growAndElevateKeyframes = keyframes`
