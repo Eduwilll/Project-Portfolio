@@ -19,7 +19,7 @@ const Main = ({ children, router }) => {
                 <meta name='author' content='Eduardo Fabricio' />
                 <link rel="apple-touch-icon" href="apple-touch-icon.png" />
                 <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-                <title>Eduardo Fabiricio- Homepage</title>
+                <title>Eduardo Fabricio- Homepage</title>
                 <meta name="twitter:title" content="Eduardo Fabricio" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta property="og:type" content="website" />
