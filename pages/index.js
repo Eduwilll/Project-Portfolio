@@ -13,13 +13,14 @@ import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article';
 import Section from '../components/section'
 import Paragraph from '../components/paragraph'
-import { BioSection, BioYear } from '../components/bio';
-import Devicon from '../components/devicon-lengs';
+import TechStack from '../components/tech-stack';
 import SocialLinks from '../components/SocialLinks';
 import IntroBox from '../components/introBox';
 import CustomLink from '../components/CustomLink';
 import SkillsSection from '../components/skills-section';
 import TimelineSection from '../components/timeline-section';
+import Biography from '../components/biography';
+import Interests from '../components/interests';
 
 const Home = () => (
     <Layout>
@@ -118,7 +119,7 @@ const Home = () => (
                 <Heading as="h3" variant="section-title">
                     Tech Stack
                 </Heading>
-                <Devicon />
+                <TechStack />
             </Section>
 
             <Divider borderColor="whiteAlpha.200" my={6} />
@@ -138,30 +139,7 @@ const Home = () => (
                 <Heading as="h3" variant="section-title">
                     Bio
                 </Heading>
-                <BioSection>
-                    <BioYear>1997</BioYear>
-                    Born in Sumaré/SP, Brazil.
-                </BioSection>
-                <BioSection>
-                    <BioYear>2015</BioYear>
-                    Administrative Assistant at CJ Lan House
-                </BioSection>
-                <BioSection>
-                    <BioYear>2020</BioYear>
-                    Started Systems Analysis and Development at FATEC-Campinas
-                </BioSection>
-                <BioSection>
-                    <BioYear>2023</BioYear>
-                    Systems Development Intern at Sottelli (until 2024)
-                </BioSection>
-                <BioSection>
-                    <BioYear>2025</BioYear>
-                    Graduated from FATEC-Campinas with a degree in Systems Analysis and Development
-                </BioSection>
-                <BioSection>
-                    <BioYear>2024</BioYear>
-                    Obtained AWS Cloud Foundation certification and started exploring DevOps. Began freelancing in Web Development and Process Automation.
-                </BioSection>
+                <Biography />
             </Section>
 
             <Section delay={0.5}>
@@ -169,21 +147,7 @@ const Home = () => (
                     Interests
                 </Heading>
                 <Flex gap={3} flexWrap="wrap">
-                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
-                        Rock Music
-                    </Badge>
-                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
-                        Movies & Series
-                    </Badge>
-                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
-                        Animes
-                    </Badge>
-                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
-                        Games
-                    </Badge>
-                    <Badge bg="whiteAlpha.100" color="whiteAlpha.800" px={3} py={2} borderRadius="md">
-                        Programming
-                    </Badge>
+                    <Interests />
                 </Flex>
             </Section>
 

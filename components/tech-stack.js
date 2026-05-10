@@ -28,12 +28,14 @@ const icons = [
     { src: "/images/icons/azure/azure-original-wordmark.svg", alt: "Azure", tooltip: "Azure" },
     { src: "/images/icons/firebase/firebase-plain-wordmark.svg", alt: "firebase", tooltip: "firebase" },
     { src: "/images/icons/salesforce/salesforce-plain.svg", alt: "salesforce", tooltip: "Salesforce" },
+    { src: "/images/icons/rust/rust-plain.svg", alt: "rust", tooltip: "Rust" },
+    { src: "/images/icons/go/go-plain.svg", alt: "go", tooltip: "Go" },
   ];
 
-const Devicon = () => {
+const TechStack = () => {
     return (
         <AnimatedImageGrid icons={icons} />
     )
 };
 
-export default Devicon;
+export default TechStack;

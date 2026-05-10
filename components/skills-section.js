@@ -7,12 +7,14 @@ const MotionBox = motion.create(Box)
 const skills = [
   { name: 'JavaScript', level: 90, color: 'yellow.400' },
   { name: 'TypeScript', level: 85, color: 'blue.400' },
-  { name: 'React / Next.js', level: 90, color: 'cyan.400' },
+  { name: 'React / Next.js', level: 80, color: 'cyan.400' },
   { name: 'Node.js', level: 80, color: 'green.400' },
   { name: 'Python', level: 75, color: 'blue.300' },
   { name: 'Java', level: 70, color: 'red.400' },
-  { name: 'Cloud (AWS)', level: 75, color: 'purple.400' },
+  { name: 'Cloud (AWS, Azure, GCP)', level: 25, color: 'purple.400' },
   { name: 'SQL / Databases', level: 80, color: 'orange.400' },
+  { name: 'Rust', level: 10, color: 'orange.400' },
+  { name: 'Go', level: 10, color: 'orange.400' },
 ]
 
 const SkillBar = ({ name, level, color, delay }) => (
