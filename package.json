@@ -21,7 +21,7 @@
     "devicon": "^2.15.1",
     "framer-motion": "^12.0.6",
     "gray-matter": "^4.0.3",
-    "next": "16.1.7",
+    "next": "16.2.6",
     "react": "^19.0.0",
     "react-chartjs-2": "^5.2.0",
     "react-dom": "^19.0.0",
@@ -40,5 +40,6 @@
     "overrides": {
       "prismjs": "^1.29.0"
     }
-  }
+  },
+  "packageManager":"pnpm@11.0.8"
 }
