@@ -1,7 +1,7 @@
 import { Container, Heading, SimpleGrid } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { GridItem } from '../components/grid-item'
+import Section from '../components/ui/section'
+import { GridItem } from '../components/ui/grid-item'
 
 import thumbComingSoon from '../public/images/works/thumbComingSoon.jpg'
 

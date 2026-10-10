@@ -1,5 +1,5 @@
 import * as React from "react";
-import AnimatedImageGrid from "./AnimatedImageTooltip";
+import AnimatedImageGrid from "./animated-image-grid";
 
 
 const icons = [

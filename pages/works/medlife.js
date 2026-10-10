@@ -15,9 +15,9 @@ import {
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/work'
 // import { ExternalLinkIcon } from '@chakra-ui/icons'
-import { Title, Meta } from '../../components/work'
-import P from '../../components/paragraph'
-import FigmaEmbed from '../../components/figmaEmbed'
+import { Title, Meta } from '../../components/ui/work'
+import P from '../../components/ui/paragraph'
+import FigmaEmbed from '../../components/ui/figma-embed'
 
 const Work = () => (
   <Layout title="MEDLIFE: Prescription Medication Marketplace">

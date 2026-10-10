@@ -2,9 +2,9 @@ import { Container, Heading, SimpleGrid, Divider, Text, Box, Button, Flex } from
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Image from 'next/image'
 import Layout from '../components/layouts/article'
-import Section from '../components/section'
-import { WorkGridItem } from '../components/grid-item'
-import CustomLink from '../components/CustomLink'
+import Section from '../components/ui/section'
+import { WorkGridItem } from '../components/ui/grid-item'
+import CustomLink from '../components/ui/custom-link'
 
 import thumbEcommerce from '../public/images/works/ecommerce/ecommerce-thumb.png';
 import thumbCryptography from '../public/images/works/cryptography/cryptography-thumb.png';

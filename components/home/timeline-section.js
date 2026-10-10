@@ -1,6 +1,6 @@
 import { Box, Heading, Text, VStack, HStack, Badge, Flex } from '@chakra-ui/react'
 import { motion } from 'framer-motion'
-import Section from './section'
+import Section from '../ui/section'
 
 const MotionBox = motion.create(Box)
 

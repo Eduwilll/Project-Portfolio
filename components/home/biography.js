@@ -1,4 +1,4 @@
-import { BioSection, BioYear } from '../components/bio';
+import { BioSection, BioYear } from '../ui/bio';
 
 const timelineData = [
     { year: '1997', event: 'Born in Sumaré/SP, Brazil.' },

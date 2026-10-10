@@ -1,4 +1,4 @@
-import { Badge, Flex } from '@chakra-ui/react';
+import { Badge, Flex, useColorModeValue } from '@chakra-ui/react';
 
 const interestList = [
     'Rock Music',
@@ -13,13 +13,19 @@ const interestList = [
 ];
 
 const Interests = () => {
+    const badgeBg = useColorModeValue('white', 'whiteAlpha.100')
+    const badgeColor = useColorModeValue('gray.800', 'gray.100')
+    const badgeBorder = useColorModeValue('gray.200', 'whiteAlpha.200')
+
     return (
         <Flex gap={3} flexWrap="wrap">
             {interestList.map((interest) => (
                 <Badge
                     key={interest}
-                    bg="card-subtle"
-                    color="badge-text"
+                    bg={badgeBg}
+                    color={badgeColor}
+                    border="1px solid"
+                    borderColor={badgeBorder}
                     px={3}
                     py={2}
                     borderRadius="md"

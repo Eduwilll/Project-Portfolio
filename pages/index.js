@@ -11,16 +11,16 @@ import {
 } from "@chakra-ui/react";
 import { ChevronRightIcon } from '@chakra-ui/icons'
 import Layout from '../components/layouts/article';
-import Section from '../components/section'
-import Paragraph from '../components/paragraph'
-import TechStack from '../components/tech-stack';
-import SocialLinks from '../components/SocialLinks';
-import IntroBox from '../components/introBox';
-import CustomLink from '../components/CustomLink';
-import SkillsSection from '../components/skills-section';
-import TimelineSection from '../components/timeline-section';
-import Biography from '../components/biography';
-import Interests from '../components/interests';
+import Section from '../components/ui/section'
+import Paragraph from '../components/ui/paragraph'
+import TechStack from '../components/home/tech-stack';
+import SocialLinks from '../components/home/social-links';
+import IntroBox from '../components/home/intro-box';
+import CustomLink from '../components/ui/custom-link';
+import SkillsSection from '../components/home/skills-section';
+import TimelineSection from '../components/home/timeline-section';
+import Biography from '../components/home/biography';
+import Interests from '../components/home/interests';
 
 const Home = () => (
     <Layout>
