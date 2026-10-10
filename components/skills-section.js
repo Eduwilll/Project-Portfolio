@@ -26,12 +26,12 @@ const SkillBar = ({ name, level, color, delay }) => (
   >
     <HStack justify="space-between" mb={1}>
       <Text fontSize="sm" fontWeight="medium">{name}</Text>
-      <Text fontSize="sm" color="whiteAlpha.600">{level}%</Text>
+      <Text fontSize="sm" color="text-faint">{level}%</Text>
     </HStack>
     <Box
       position="relative"
       h="8px"
-      bg="whiteAlpha.100"
+      bg="card-subtle"
       borderRadius="full"
       overflow="hidden"
     >

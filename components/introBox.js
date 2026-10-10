@@ -5,7 +5,7 @@ const IntroBox = () => {
   return (
     <Box
       borderRadius="xl"
-      bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.100')}
+      bg={useColorModeValue('white', 'whiteAlpha.100')}
       border="1px solid"
       borderColor={useColorModeValue('gray.200', 'whiteAlpha.100')}
       p={4}

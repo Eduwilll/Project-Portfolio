@@ -36,13 +36,13 @@ const Home = () => (
                     </Heading>
                     <Text
                         fontSize="lg"
-                        color="teal.300"
+                        color="accent-teal"
                         fontWeight="medium"
                         mt={1}
                     >
                         Full Stack Developer
                     </Text>
-                    <Text fontSize="sm" color="whiteAlpha.700" mt={2}>
+                    <Text fontSize="sm" color="text-muted" mt={2}>
                         Cybersecurity Enthusiast | Cloud Computing | Mobile Development
                     </Text>
                     <Flex gap={2} mt={3} flexWrap="wrap">
@@ -74,7 +74,7 @@ const Home = () => (
                         }}
                     >
                         <Image
-                            borderColor="gray.800"
+                            borderColor="page-bg"
                             borderWidth={4}
                             borderStyle="solid"
                             borderRadius='full'
@@ -122,17 +122,17 @@ const Home = () => (
                 <TechStack />
             </Section>
 
-            <Divider borderColor="whiteAlpha.200" my={6} />
+            <Divider borderColor="divider-subtle" my={6} />
 
             {/* Skills Section */}
             <SkillsSection />
 
-            <Divider borderColor="whiteAlpha.200" my={6} />
+            <Divider borderColor="divider-subtle" my={6} />
 
             {/* Timeline Section */}
             <TimelineSection />
 
-            <Divider borderColor="whiteAlpha.200" my={6} />
+            <Divider borderColor="divider-subtle" my={6} />
 
             {/* Bio Section */}
             <Section delay={0.4}>
@@ -146,12 +146,10 @@ const Home = () => (
                 <Heading as="h3" variant="section-title">
                     Interests
                 </Heading>
-                <Flex gap={3} flexWrap="wrap">
-                    <Interests />
-                </Flex>
+                <Interests />
             </Section>
 
-            <Divider borderColor="whiteAlpha.200" my={6} />
+            <Divider borderColor="divider-subtle" my={6} />
 
             <Section delay={0.6}>
                 <Heading as="h3" variant="section-title">

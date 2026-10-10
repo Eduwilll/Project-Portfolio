@@ -98,12 +98,12 @@ export const WorkGridItem = ({ children, id, title, thumbnail, isCurrent }) => (
           fontSize={18}
           fontWeight="semibold"
           transition="color 0.2s ease"
-          _groupHover={{ color: 'teal.300' }}
+          _groupHover={{ color: 'accent-teal' }}
         >
           {title}
         </Text>
       </LinkOverlay>
-      <Text fontSize={14} color="whiteAlpha.700" mt={1}>{children}</Text>
+      <Text fontSize={14} color="text-muted" mt={1}>{children}</Text>
     </LinkBox>
   </Box>
 )

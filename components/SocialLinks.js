@@ -8,7 +8,7 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
     <Tooltip label={description || label} placement="top" hasArrow>
       <Box
         position="relative"
-        bg="whiteAlpha.100"
+        bg="card-subtle"
         borderRadius="xl"
         p={4}
         transition="all 0.3s ease"
@@ -16,7 +16,7 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
         borderColor="transparent"
         _hover={{
           transform: 'translateY(-4px)',
-          bg: 'whiteAlpha.200',
+          bg: 'card-hover',
           borderColor: 'teal.500',
           boxShadow: '0 10px 30px -10px rgba(0, 128, 128, 0.3)'
         }}
@@ -33,10 +33,10 @@ const AnimatedSocialLink = ({ href, label, iconSrc, description }) => (
           </Box>
           <Box>
             <Flex align="center" gap={1}>
-              <Text fontWeight="semibold" fontSize="sm" color="white">
+              <Text fontWeight="semibold" fontSize="sm">
                 {label}
               </Text>
-              <Icon as={IoOpenOutline} boxSize={3} color="whiteAlpha.600" />
+              <Icon as={IoOpenOutline} boxSize={3} color="text-faint" />
             </Flex>
           </Box>
         </Flex>

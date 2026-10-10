@@ -19,7 +19,7 @@ const Works = () => (
                 <Heading as="h3" fontSize={28} mb={2} variant="section-title">
                     Projects
                 </Heading>
-                <Text color="whiteAlpha.700" mb={8}>
+                <Text color="text-muted" mb={8}>
                     A selection of my most recent works in web and mobile development.
                 </Text>
             </Section>
@@ -27,11 +27,11 @@ const Works = () => (
             {/* Featured Current Work */}
             <Section delay={0.1}>
                 <Box
-                    bg="whiteAlpha.50"
+                    bg="card-subtle"
                     borderRadius="xl"
                     p={6}
                     border="1px solid"
-                    borderColor="teal.300"
+                    borderColor="accent-teal"
                     position="relative"
                     overflow="hidden"
                     _before={{
@@ -62,10 +62,10 @@ const Works = () => (
                             <Heading as="h4" fontSize="2xl" mb={2}>
                                 Medlife - Healthcare Management System
                             </Heading>
-                            <Text color="whiteAlpha.700" mb={4}>
+                            <Text color="text-muted" mb={4}>
                                 A comprehensive healthcare management platform designed to streamline patient care, appointment scheduling, and medical record management. Built with modern web technologies and cloud infrastructure.
                             </Text>
-                            <Text fontSize="sm" color="teal.300" mb={4}>
+                            <Text fontSize="sm" color="accent-teal" mb={4}>
                                 Technologies: React, Node.js, MongoDB, AWS, Docker
                             </Text>
                             <CustomLink href="/works/medlife">
@@ -99,7 +99,7 @@ const Works = () => (
                 </Box>
             </Section>
 
-            <Divider borderColor="whiteAlpha.200" my={8} />
+            <Divider borderColor="divider-subtle" my={8} />
 
             {/* Other Projects */}
             <Section delay={0.2}>

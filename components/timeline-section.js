@@ -53,7 +53,7 @@ const TimelineItem = ({ experience, index, isLast }) => (
         top="24px"
         bottom={0}
         w="2px"
-        bg="whiteAlpha.200"
+        bg="divider-subtle"
       />
     )}
 
@@ -67,29 +67,29 @@ const TimelineItem = ({ experience, index, isLast }) => (
       borderRadius="full"
       bg="teal.500"
       border="4px solid"
-      borderColor="gray.800"
+      borderColor="page-bg"
       zIndex={1}
     />
 
     <Box>
-      <Text fontSize="sm" color="teal.300" fontWeight="medium" mb={1}>
+      <Text fontSize="sm" color="accent-teal" fontWeight="medium" mb={1}>
         {experience.period}
       </Text>
       <Heading as="h4" fontSize="lg" mb={1}>
         {experience.title}
       </Heading>
-      <Text fontSize="sm" color="whiteAlpha.700" mb={2}>
+      <Text fontSize="sm" color="text-muted" mb={2}>
         {experience.company}
       </Text>
-      <Text fontSize="sm" color="whiteAlpha.600" mb={3}>
+      <Text fontSize="sm" color="text-faint" mb={3}>
         {experience.description}
       </Text>
       <Flex gap={2} flexWrap="wrap">
         {experience.tags.map((tag) => (
           <Badge
             key={tag}
-            bg="whiteAlpha.100"
-            color="whiteAlpha.800"
+            bg="card-subtle"
+            color="badge-text"
             fontSize="xs"
             px={2}
             py={1}
